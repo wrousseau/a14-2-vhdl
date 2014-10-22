@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Wed Oct 22 14:45:19 2014">
+  <application stringID="Xst" timeStamp="Wed Oct 22 15:18:48 2014">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -16,7 +16,7 @@
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="LD_LIBRARY_PATH"/>
-          <item stringID="value" value="/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE//lib/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/lib/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/smartmodel/lin64/installed_lin64/lib:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/sysgen/lib:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/lib/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/common/lib/lin64:/usr/ensta/pack/virtualsoc/VirtualSoc/3rd_party/lib/"/>
+          <item stringID="value" value="/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE//lib/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/lib/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/smartmodel/lin64/installed_lin64/lib:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/sysgen/lib:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/lib/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/common/lib/lin64:/usr/ensta/pack/virtualsoc/VirtualSoc/3rd_party/lib"/>
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX_EDK"/>
@@ -24,7 +24,7 @@
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE//bin/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/bin/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/sysgen/util:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/sysgen/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/../../../DocNav:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/PlanAhead/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/bin/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/gnu/microblaze/lin/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/gnu/arm/lin/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/common/bin/lin64:/home/w/wrousseau/Cours/A14/A14-4/A14-4_Lucas_Woody/virtualsoc/bin:/usr/ensta/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/ensta/pack/simplescalar-3v0d/bin:/usr/ensta/pack/simplescalar-3v0d/simplesim-3.0:/usr/ensta/pack/virtualsoc/arm-elf-gcc-4.5.3/bin/"/>
+          <item stringID="value" value="/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE//bin/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/bin/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/sysgen/util:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/sysgen/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/ISE/../../../DocNav:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/PlanAhead/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/bin/lin64:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/gnu/microblaze/lin/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/gnu/arm/lin/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/auto/appy/ensta/pack/xilinx/14.6/ISE_DS/common/bin/lin64:/home/d/diallo/Cours/3A/A14/A14-4/systemc/virtualsoc/bin:/usr/ensta/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/ensta/pack/virtualsoc/arm-elf-gcc-4.5.3/bin"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="LMC_HOME"/>
@@ -83,13 +83,13 @@
         <item stringID="User_EnvOsname" value="Debian"/>
         <item stringID="User_EnvOsrelease" value="Debian GNU/Linux 7.7 (wheezy)"/>
       </item>
-      <item stringID="User_EnvHost" value="yoda07"/>
+      <item stringID="User_EnvHost" value="yoda08"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz"/>
-          <item stringID="speed" value="3100.000 MHz"/>
+          <item stringID="speed" value="1600.000 MHz"/>
         </row>
       </table>
     </section>

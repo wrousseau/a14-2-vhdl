@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> 
 Reading design: inputImage.prj
@@ -108,28 +108,28 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" into library work
-Parsing entity <inputImage>.
-ERROR:HDLCompiler:806 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 37: Syntax error near "file".
-ERROR:HDLCompiler:854 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 35: Unit <inputimage> ignored due to previous errors.
-Parsing architecture <arc1> of entity <inputimage>.
-ERROR:HDLCompiler:374 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 44: Entity <inputimage> is not yet compiled.
-ERROR:HDLCompiler:806 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 46: Syntax error near "READING".
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 47: <line> is not declared.
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 48: <read_mode> is not declared.
-ERROR:HDLCompiler:631 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 48: Near string "entrees.dat" ; 0 visible types match here
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 49: <bit_vector> is not declared.
-ERROR:HDLCompiler:32 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 50: <input_value0> is already declared in this region.
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 50: <bit_vector> is not declared.
-ERROR:HDLCompiler:32 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 51: <input_value0> is already declared in this region.
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 51: <bit_vector> is not declared.
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 54: <readline> is not declared.
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 55: <read> is not declared.
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 56: <r0> is not declared.
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 58: <readline> is not declared.
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 59: <read> is not declared.
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 60: <r1> is not declared.
-ERROR:HDLCompiler:69 - "/auto/w/wrousseau/Cours/A14/A14-2/a14-2-vhdl/inputImage.vhd" Line 62: <readline> is not declared.
+Parsing VHDL file "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" into library work
+Parsing entity <FileReader>.
+ERROR:HDLCompiler:806 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 37: Syntax error near "file".
+ERROR:HDLCompiler:854 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 35: Unit <filereader> ignored due to previous errors.
+Parsing architecture <arc1> of entity <filereader>.
+ERROR:HDLCompiler:374 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 45: Entity <filereader> is not yet compiled.
+ERROR:HDLCompiler:806 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 47: Syntax error near "READING".
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 48: <line> is not declared.
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 49: <read_mode> is not declared.
+ERROR:HDLCompiler:631 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 49: Near string "entrees.dat" ; 0 visible types match here
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 50: <bit_vector> is not declared.
+ERROR:HDLCompiler:32 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 51: <input_value0> is already declared in this region.
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 51: <bit_vector> is not declared.
+ERROR:HDLCompiler:32 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 52: <input_value0> is already declared in this region.
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 52: <bit_vector> is not declared.
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 55: <readline> is not declared.
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 56: <read> is not declared.
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 57: <r0> is not declared.
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 59: <readline> is not declared.
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 60: <read> is not declared.
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 61: <r1> is not declared.
+ERROR:HDLCompiler:69 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/a14-2-vhdl/FileReader.vhd" Line 63: <readline> is not declared.
 Sorry, too many errors..
 --> 
 

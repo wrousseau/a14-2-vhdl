@@ -55,9 +55,7 @@ COMPONENT Mask is
 	);
 END COMPONENT Mask;
 
-begin
-
-	theMask : Mask PORT MAP (
+BEGIN	theMask : Mask PORT MAP (
 			 ready => ready,
 			 result => result,
           k0 => k0,
@@ -71,39 +69,75 @@ begin
 			 k8 => k8
         );
 		  
-	process(clk)
+	PROCESS(R2) is
 
-	begin
+	BEGIN
+	
+	k0 <= R0(7 downto 0);
+	k1 <= R0(15 downto 8);
+	k2 <= R0(23 downto 16);
+	k3 <= R1(7 downto 0);
+	k4 <= R1(15 downto 8);
+	k5 <= R1(23 downto 16);
+	k6 <= R2(7 downto 0);
+	k7 <= R2(15 downto 8);
+	k8 <= R2(23 downto 16);
+	
+	--R3(7 downto 0) <= k0;
+	--R3(15 downto 8) <= k1;
+	--R3(23 downto 16) <= k2;
+	--R3(31 downto 24) <= k3;
+	
+	--ready <= '1';
+	--wait on ready;
+	
+	k0 <= k1;
+	k1 <= k2;
+	k2 <= R0(31 downto 24);
+	k3 <= k4;
+	k4 <= k5;
+	k5 <= R1(31 downto 24);
+	k6 <= k7;
+	k7 <= k8;
+	k8 <= R2(31 downto 24);
+	
+	--R3(7 downto 0) <= k0;
+	--R3(15 downto 8) <= k1;
+	--R3(23 downto 16) <= k2;
+	--R3(31 downto 24) <= k3;
+	
+	--ready <= '0';
+	
 	--result <= "00000000";
-	if clk = '0' then
-		for j in 1 to 2 loop
-			k0 <= R0( (j-1)*7 + 7 downto (j-1)*7 );
-			k1 <= R0(j*7 + 7 downto j*7);
-			k2 <= R0((j+1)*7 + 7 downto (j+1)*7 );
-			k3 <= R1( (j-1)*7 + 7 downto (j-1)*7 );
-			k4 <= R1(j*7 + 7 downto j*7);
-			k5 <= R1((j+1)*7 + 7 downto (j+1)*7 );
-			k6 <= R2( (j-1)*7 + 7 downto (j-1)*7 );
-			k7 <= R2(j*7 + 7 downto j*7);
-			k8 <= R2((j+1)*7 + 7 downto (j+1)*7 );
+	--if clk = '0' then
+		--for j in 1 to 2 loop
+			--k0 <= R0( (j-1)*7 + 7 downto (j-1)*7 );
+			--k1 <= R0(j*7 + 7 downto j*7);
+			--k2 <= R0((j+1)*7 + 7 downto (j+1)*7 );
+			--k3 <= R1( (j-1)*7 + 7 downto (j-1)*7 );
+			--k4 <= R1(j*7 + 7 downto j*7);
+			--k5 <= R1((j+1)*7 + 7 downto (j+1)*7 );
+			--k6 <= R2( (j-1)*7 + 7 downto (j-1)*7 );
+			--k7 <= R2(j*7 + 7 downto j*7);
+			--k8 <= R2((j+1)*7 + 7 downto (j+1)*7 );
 		
-			ready <= '1';
-		end loop;
-	end if;
+			--ready <= '1';
+		--end loop;
+	--end if;
 	
-	end process;
+	END PROCESS;
 	
 	
-	process(result)
+	PROCESS(result)
 	
-	begin
+	BEGIN
 		R3(7 downto 0) <= result;
 		R3(15 downto 8) <= result;
 		R3(23 downto 16) <= result;
 		R3(31 downto 24) <= result;
-		ready <= '0';
+		--ready <= '0';
 
-	end process;
+	END PROCESS;
 
 end arc1;
 

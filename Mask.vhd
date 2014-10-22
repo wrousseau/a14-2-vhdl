@@ -38,13 +38,12 @@ entity Mask is
 				result : out  STD_LOGIC_VECTOR (7 downto 0));
 end Mask;
 
-architecture arc1 of Mask is
+ARCHITECTURE arc1 of Mask is
 
 	
-	
-begin
+BEGIN
 
-	process(ready)
+	PROCESS(k8)
 	
 	variable M0 : STD_LOGIC_VECTOR(7 downto 0):= "00000001";
 	variable M1 : STD_LOGIC_VECTOR(7 downto 0):= "00000001";
@@ -58,8 +57,8 @@ begin
 	
 	variable tmpResult : STD_LOGIC_VECTOR(15 downto 0);
 
-	begin
-		if ready = '1' then
+	BEGIN
+		--if ready = '1' then
 			tmpResult := --STD_LOGIC_VECTOR(
 							M0 * k0
 						+ M1 * k1
@@ -83,9 +82,9 @@ begin
 					
 		result <= tmpResult(7 downto 0);
 		
-		end if;
+		--end if;
 
-	end process;
+	END PROCESS;
 
-end arc1;
+END arc1;
 

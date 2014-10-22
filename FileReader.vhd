@@ -4,7 +4,7 @@
 -- 
 -- Create Date:    16:20:00 10/21/2014 
 -- Design Name: 
--- Module Name:    inputImage - Behavioral 
+-- Module Name:    FileReader - arc1 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -32,25 +32,26 @@ use IEEE.NUMERIC_STD.ALL;
 use STD.TEXTIO.ALL; -- utilisation de fichiers
 
 
-entity inputImage is
+ENTITY FileReader is
     Port ( clk : in  STD_LOGIC;
-           input_file : in  file;
+           input_file : in file;
            R0 : out  STD_LOGIC_VECTOR(31 downto 0);
            R1 : out  STD_LOGIC_VECTOR(31 downto 0);
-           R2 : out  STD_LOGIC_VECTOR(31 downto 0));
-end inputImage;
+           R2 : out  STD_LOGIC_VECTOR(31 downto 0)
+	 );
+END FileReader;
 
 
-architecture arc1 of inputImage is
+ARCHITECTURE arc1 of FileReader is
 
-READING : process
+READING : PROCESS
  variable input_line: line;	 -- le type LINE est un pointeur
  file input_file: text open READ_MODE is "entrees.dat";	 -- fichier spécifié
  variable input_value0: bit_vector(31 downto 0);	  -- variables à lire
  variable input_value0: bit_vector(31 downto 0);	  -- variables à lire
  variable input_value0: bit_vector(31 downto 0);	  -- variables à lire
 
-begin
+BEGIN
  readline(input_file, input_line);	-- new line read from the input file
  read(input_line, input_value);	-- new vector read from the input line
  R0	<=	input_value0 ;
@@ -63,7 +64,7 @@ begin
  read(input_line, input_value2);	-- new vector read from the input line
  R2	<= input_value2 ;
 
-end process READING;
+END PROCESS READING;
 
-end arc1;
+END arc1;
 
