@@ -1,2 +1,0 @@
-vhdl isim_temp "filter.vhd"
-vhdl isim_temp "test_bench.vhd"
