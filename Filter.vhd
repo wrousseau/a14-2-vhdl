@@ -73,69 +73,30 @@ BEGIN	theMask : Mask PORT MAP (
 
 	BEGIN
 	
-	k0 <= R0(7 downto 0);
-	k1 <= R0(15 downto 8);
-	k2 <= R0(23 downto 16);
-	k3 <= R1(7 downto 0);
-	k4 <= R1(15 downto 8);
-	k5 <= R1(23 downto 16);
-	k6 <= R2(7 downto 0);
-	k7 <= R2(15 downto 8);
-	k8 <= R2(23 downto 16);
+	R3 <= (others=>'0');
 	
-	--R3(7 downto 0) <= k0;
-	--R3(15 downto 8) <= k1;
-	--R3(23 downto 16) <= k2;
-	--R3(31 downto 24) <= k3;
-	
-	--ready <= '1';
-	--wait on ready;
-	
-	k0 <= k1;
-	k1 <= k2;
-	k2 <= R0(31 downto 24);
-	k3 <= k4;
-	k4 <= k5;
-	k5 <= R1(31 downto 24);
-	k6 <= k7;
-	k7 <= k8;
-	k8 <= R2(31 downto 24);
-	
-	--R3(7 downto 0) <= k0;
-	--R3(15 downto 8) <= k1;
-	--R3(23 downto 16) <= k2;
-	--R3(31 downto 24) <= k3;
-	
-	--ready <= '0';
-	
-	--result <= "00000000";
-	--if clk = '0' then
-		--for j in 1 to 2 loop
-			--k0 <= R0( (j-1)*7 + 7 downto (j-1)*7 );
-			--k1 <= R0(j*7 + 7 downto j*7);
-			--k2 <= R0((j+1)*7 + 7 downto (j+1)*7 );
-			--k3 <= R1( (j-1)*7 + 7 downto (j-1)*7 );
-			--k4 <= R1(j*7 + 7 downto j*7);
-			--k5 <= R1((j+1)*7 + 7 downto (j+1)*7 );
-			--k6 <= R2( (j-1)*7 + 7 downto (j-1)*7 );
-			--k7 <= R2(j*7 + 7 downto j*7);
-			--k8 <= R2((j+1)*7 + 7 downto (j+1)*7 );
-		
-			--ready <= '1';
-		--end loop;
-	--end if;
+	for j in 3 downto 0 loop
+		k0 <= R0(j*8 + 7 downto j*8);
+		k1 <= R0(j*8 + 7 downto j*8);
+		k2 <= R0(j*8 + 7 downto j*8);
+		k3 <= R1(j*8 + 7 downto j*8);
+		k4 <= R1(j*8 + 7 downto j*8);
+		k5 <= R1(j*8 + 7 downto j*8);
+		k6 <= R2(j*8 + 7 downto j*8);
+		k7 <= R2(j*8 + 7 downto j*8);
+		k8 <= R2(j*8 + 7 downto j*8);
+	end loop;
 	
 	END PROCESS;
 	
 	
-	PROCESS(result)
-	
+	PROCESS is
 	BEGIN
-		R3(7 downto 0) <= result;
-		R3(15 downto 8) <= result;
-		R3(23 downto 16) <= result;
-		R3(31 downto 24) <= result;
-		--ready <= '0';
+		
+		for j in 3 downto 0 loop
+			wait on result;
+			R3( j*8 + 7 downto j*8 ) <= result;
+		end loop;
 
 	END PROCESS;
 

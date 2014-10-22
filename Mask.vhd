@@ -59,26 +59,15 @@ BEGIN
 
 	BEGIN
 		--if ready = '1' then
-			tmpResult := --STD_LOGIC_VECTOR(
-							M0 * k0
-						+ M1 * k1
-						+ M2 * k2
-						+ M3 * k3
-						+ M4 * k4
-						+ M5 * k5
-						+ M6 * k6
-						+ M7 * k7
-						+ M8 * k8;
-						--  signed(M0 * signed(k0))
-						--+ signed(M1 * signed(k1))
-						--+ signed(M2 * signed(k2))
-						--+ signed(M3 * signed(k3))
-						--+ signed(M4 * signed(k4))
-						--+ signed(M5 * signed(k5))
-						--+ signed(M6 * signed(k6))
-						--+ signed(M7 * signed(k7))
-						--+ signed(M8 * signed(k8))
-					--);
+			tmpResult :=  M0 * k0
+							+ M1 * k1
+							+ M2 * k2
+							+ M3 * k3
+							+ M4 * k4
+							+ M5 * k5
+							+ M6 * k6
+							+ M7 * k7
+							+ M8 * k8;
 					
 		result <= tmpResult(7 downto 0);
 		
