@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/test_bench_isim_beh.exe" -prj "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/test_bench_beh.prj" "work.test_bench" 
+-intstyle "ise" -incremental -lib "secureip" -o "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/bench_isim_beh.exe" -prj "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/bench_beh.prj" "work.bench" 

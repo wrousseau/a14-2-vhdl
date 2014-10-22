@@ -5,7 +5,7 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Parameter xsthdpdir set to xst
@@ -108,10 +108,10 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" into library work
+Parsing VHDL file "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" into library work
 Parsing entity <Mask>.
 Parsing architecture <arc1> of entity <mask>.
-Parsing VHDL file "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Filter.vhd" into library work
+Parsing VHDL file "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Filter.vhd" into library work
 Parsing entity <Filter>.
 Parsing architecture <arc1> of entity <filter>.
 
@@ -122,271 +122,42 @@ Parsing architecture <arc1> of entity <filter>.
 Elaborating entity <Filter> (architecture <arc1>) from library <work>.
 
 Elaborating entity <Mask> (architecture <arc1>) from library <work>.
-WARNING:HDLCompiler:871 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 47: Using initial value "00000001" for m0 since it is never assigned
-WARNING:HDLCompiler:871 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 48: Using initial value "00000001" for m1 since it is never assigned
-WARNING:HDLCompiler:871 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 49: Using initial value "00000001" for m2 since it is never assigned
-WARNING:HDLCompiler:871 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 50: Using initial value "00000001" for m3 since it is never assigned
-WARNING:HDLCompiler:871 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 51: Using initial value "00000000" for m4 since it is never assigned
-WARNING:HDLCompiler:871 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 52: Using initial value "10000001" for m5 since it is never assigned
-WARNING:HDLCompiler:871 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 53: Using initial value "10000001" for m6 since it is never assigned
-WARNING:HDLCompiler:871 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 54: Using initial value "10000001" for m7 since it is never assigned
-WARNING:HDLCompiler:871 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 55: Using initial value "10000001" for m8 since it is never assigned
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 62: k0 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 63: k1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 64: k2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 65: k3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 66: k4 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 67: k5 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 68: k6 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 69: k7 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd" Line 70: k8 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Filter.vhd" Line 79: r0 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Filter.vhd" Line 80: r0 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Filter.vhd" Line 81: r0 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Filter.vhd" Line 82: r1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Filter.vhd" Line 83: r1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Filter.vhd" Line 84: r1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Filter.vhd" Line 90: mask_result should be on the sensitivity list of the process
-
-=========================================================================
-*                           HDL Synthesis                               *
-=========================================================================
-
-Synthesizing Unit <Filter>.
-    Related source file is "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Filter.vhd".
-WARNING:Xst:647 - Input <R0<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <R0<31:29>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <R1<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <R1<31:29>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <R2<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <R2<31:29>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	no macro.
-Unit <Filter> synthesized.
-
-Synthesizing Unit <Mask>.
-    Related source file is "/auto/d/diallo/Cours/3A/A14/A14-2/project/dev/vhdl/Mask.vhd".
-WARNING:Xst:647 - Input <k4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 16-bit adder for signal <n0049> created at line 62.
-    Found 16-bit adder for signal <n0052> created at line 62.
-    Found 16-bit adder for signal <GND_7_o_GND_7_o_add_3_OUT> created at line 62.
-    Found 16-bit adder for signal <n0059> created at line 62.
-    Found 16-bit adder for signal <n0062> created at line 62.
-    Found 16-bit adder for signal <n0065> created at line 62.
-    Found 16-bit adder for signal <n0040> created at line 62.
-    Found 8x8-bit multiplier for signal <n0057> created at line 67.
-    Found 8x8-bit multiplier for signal <n0060> created at line 68.
-    Found 8x8-bit multiplier for signal <n0063> created at line 69.
-    Found 8x8-bit multiplier for signal <n0066> created at line 70.
-    Summary:
-	inferred   4 Multiplier(s).
-	inferred   7 Adder/Subtractor(s).
-Unit <Mask> synthesized.
-
-=========================================================================
-HDL Synthesis Report
-
-Macro Statistics
-# Multipliers                                          : 4
- 8x8-bit multiplier                                    : 4
-# Adders/Subtractors                                   : 7
- 16-bit adder                                          : 7
-
-=========================================================================
-
-=========================================================================
-*                       Advanced HDL Synthesis                          *
-=========================================================================
-
-
-Synthesizing (advanced) Unit <Mask>.
-	The following adders/subtractors are grouped into adder tree <Madd_n0040_Madd1> :
- 	<Madd_n0062_Madd> in block <Mask>, 	<Madd_n0065_Madd> in block <Mask>, 	<Madd_n0040_Madd> in block <Mask>.
-	The following adders/subtractors are grouped into adder tree <Madd_GND_7_o_GND_7_o_add_3_OUT1> :
- 	<Madd_n0049> in block <Mask>, 	<Madd_n0052> in block <Mask>, 	<Madd_GND_7_o_GND_7_o_add_3_OUT> in block <Mask>.
-	Multiplier <Mmult_n0066> in block <Mask> and adder/subtractor <ADDER_FOR_MULTADD_Madd2> in block <Mask> are combined into a MAC<Maddsub_n0066>.
-	Multiplier <Mmult_n0063> in block <Mask> and adder/subtractor <ADDER_FOR_MULTADD_Madd1> in block <Mask> are combined into a MAC<Maddsub_n0063>.
-	Multiplier <Mmult_n0060> in block <Mask> and adder/subtractor <ADDER_FOR_MULTADD_Madd> in block <Mask> are combined into a MAC<Maddsub_n0060>.
-	Multiplier <Mmult_n0057> in block <Mask> and adder/subtractor <Madd_n0059> in block <Mask> are combined into a MAC<Maddsub_n0057>.
-Unit <Mask> synthesized (advanced).
-
-=========================================================================
-Advanced HDL Synthesis Report
-
-Macro Statistics
-# MACs                                                 : 4
- 8x8-to-16-bit MAC                                     : 1
- 8x8-to-8-bit MAC                                      : 3
-# Adder Trees                                          : 1
- 16-bit / 4-inputs adder tree                          : 1
-
-=========================================================================
-
-=========================================================================
-*                         Low Level Synthesis                           *
-=========================================================================
-
-Optimizing unit <Filter> ...
-
-Mapping all equations...
-Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Filter, actual ratio is 0.
-
-Final Macro Processing ...
-
-=========================================================================
-Final Register Report
-
-Found no macro
-=========================================================================
-
-=========================================================================
-*                           Partition Report                            *
-=========================================================================
-
-Partition Implementation Status
--------------------------------
-
-  No Partitions were found in this design.
-
--------------------------------
-
-=========================================================================
-*                            Design Summary                             *
-=========================================================================
-
-Top Level Output File Name         : Filter.ngc
-
-Primitive and Black Box Usage:
-------------------------------
-# BELS                             : 62
-#      GND                         : 1
-#      LUT2                        : 9
-#      LUT3                        : 8
-#      LUT4                        : 8
-#      MUXCY                       : 17
-#      VCC                         : 1
-#      XORCY                       : 18
-# IO Buffers                       : 75
-#      IBUF                        : 60
-#      OBUF                        : 15
-# DSPs                             : 4
-#      DSP48E1                     : 4
-
-Device utilization summary:
----------------------------
-
-Selected Device : 7a100tcsg324-3 
-
-
-Slice Logic Utilization: 
- Number of Slice LUTs:                   25  out of  63400     0%  
-    Number used as Logic:                25  out of  63400     0%  
-
-Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     25
-   Number with an unused Flip Flop:      25  out of     25   100%  
-   Number with an unused LUT:             0  out of     25     0%  
-   Number of fully used LUT-FF pairs:     0  out of     25     0%  
-   Number of unique control sets:         0
-
-IO Utilization: 
- Number of IOs:                         129
- Number of bonded IOBs:                  75  out of    210    35%  
-
-Specific Feature Utilization:
- Number of DSP48E1s:                      4  out of    240     1%  
-
----------------------------
-Partition Resource Summary:
----------------------------
-
-  No Partitions were found in this design.
-
----------------------------
-
-
-=========================================================================
-Timing Report
-
-NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
-      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
-      GENERATED AFTER PLACE-and-ROUTE.
-
-Clock Information:
-------------------
-No clock signals found in this design
-
-Asynchronous Control Signals Information:
-----------------------------------------
-No asynchronous control signals found in this design
-
-Timing Summary:
----------------
-Speed Grade: -3
-
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: 8.598ns
-
-Timing Details:
----------------
-All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 2639572935 / 15
--------------------------------------------------------------------------
-Delay:               8.598ns (Levels of Logic = 19)
-  Source:            R0<21> (PAD)
-  Destination:       R3<13> (PAD)
-
-  Data Path: R0<21> to R3<13>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             3   0.001   0.389  R0_21_IBUF (R0_21_IBUF)
-     LUT2:I0->O            1   0.097   0.000  ADDERTREE_INTERNAL_Madd1_lut<0> (ADDERTREE_INTERNAL_Madd1_lut<0>)
-     MUXCY:S->O            1   0.353   0.000  ADDERTREE_INTERNAL_Madd1_cy<0> (ADDERTREE_INTERNAL_Madd1_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd1_cy<1> (ADDERTREE_INTERNAL_Madd1_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd1_cy<2> (ADDERTREE_INTERNAL_Madd1_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd1_cy<3> (ADDERTREE_INTERNAL_Madd1_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd1_cy<4> (ADDERTREE_INTERNAL_Madd1_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd1_cy<5> (ADDERTREE_INTERNAL_Madd1_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  ADDERTREE_INTERNAL_Madd1_cy<6> (ADDERTREE_INTERNAL_Madd1_cy<6>)
-     XORCY:CI->O           2   0.370   0.299  ADDERTREE_INTERNAL_Madd1_xor<7> (ADDERTREE_INTERNAL_Madd_71)
-     LUT3:I2->O            1   0.097   0.379  ADDERTREE_INTERNAL_Madd27 (ADDERTREE_INTERNAL_Madd27)
-     LUT2:I0->O            1   0.097   0.000  ADDERTREE_INTERNAL_Madd2_lut<0>8 (ADDERTREE_INTERNAL_Madd2_lut<0>8)
-     MUXCY:S->O            0   0.353   0.000  ADDERTREE_INTERNAL_Madd2_cy<0>_7 (ADDERTREE_INTERNAL_Madd2_cy<0>8)
-     XORCY:CI->O           1   0.370   0.279  ADDERTREE_INTERNAL_Madd2_xor<0>_8 (ADDERTREE_INTERNAL_Madd_92)
-     DSP48E1:C9->PCOUT47    1   1.474   0.000  theMask/Maddsub_n0057 (theMask/Maddsub_n0057_PCOUT_to_theMask/Maddsub_n0060_PCIN_47)
-     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  theMask/Maddsub_n0060 (theMask/Maddsub_n0060_PCOUT_to_theMask/Maddsub_n0063_PCIN_47)
-     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  theMask/Maddsub_n0063 (theMask/Maddsub_n0063_PCOUT_to_theMask/Maddsub_n0066_PCIN_47)
-     DSP48E1:PCIN47->P6    2   1.107   0.283  theMask/Maddsub_n0066 (R3_6_OBUF)
-     OBUF:I->O                 0.000          R3_13_OBUF (R3<13>)
-    ----------------------------------------
-    Total                      8.598ns (6.967ns logic, 1.631ns route)
-                                       (81.0% logic, 19.0% route)
-
-=========================================================================
-
-Cross Clock Domains Report:
---------------------------
-
-=========================================================================
-
-
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.80 secs
- 
+WARNING:HDLCompiler:871 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 49: Using initial value "00000001" for m0 since it is never assigned
+WARNING:HDLCompiler:871 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 50: Using initial value "00000001" for m1 since it is never assigned
+WARNING:HDLCompiler:871 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 51: Using initial value "00000001" for m2 since it is never assigned
+WARNING:HDLCompiler:871 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 52: Using initial value "00000001" for m3 since it is never assigned
+WARNING:HDLCompiler:871 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 53: Using initial value "00000000" for m4 since it is never assigned
+WARNING:HDLCompiler:871 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 54: Using initial value "10000001" for m5 since it is never assigned
+WARNING:HDLCompiler:871 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 55: Using initial value "10000001" for m6 since it is never assigned
+WARNING:HDLCompiler:871 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 56: Using initial value "10000001" for m7 since it is never assigned
+WARNING:HDLCompiler:871 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 57: Using initial value "10000001" for m8 since it is never assigned
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 64: k0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 65: k1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 66: k2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 67: k3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 68: k4 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 69: k5 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 70: k6 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 71: k7 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Mask.vhd" Line 72: k8 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Filter.vhd" Line 80: r0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Filter.vhd" Line 81: r0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Filter.vhd" Line 82: r0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Filter.vhd" Line 83: r1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Filter.vhd" Line 84: r1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Filter.vhd" Line 85: r1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Filter.vhd" Line 86: r2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Filter.vhd" Line 87: r2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Filter.vhd" Line 88: r2 should be on the sensitivity list of the process
+ERROR:HDLCompiler:1401 - "/auto/m/montalivet/3a/A14-2_VHDL/a14-2-vhdl/Filter.vhd" Line 74: Signal ready in unit Filter is connected to following multiple drivers:
+Driver 0: output signal of instance Ground (GND_4_o_BUF_33).
+Driver 1: output signal ready of instance Latch (ready).
 --> 
 
 
-Total memory usage is 500840 kilobytes
+Total memory usage is 349816 kilobytes
 
-Number of errors   :    0 (   0 filtered)
-Number of warnings :   33 (   0 filtered)
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -1,3 +1,0 @@
-vhdl work "Mask.vhd"
-vhdl work "Filter.vhd"
-vhdl work "test_bench.vhd"
