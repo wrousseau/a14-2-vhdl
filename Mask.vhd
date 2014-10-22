@@ -40,10 +40,12 @@ end Mask;
 
 architecture arc1 of Mask is
 
+	
+	
 begin
 
 	process(ready)
-
+	
 	variable M0 : STD_LOGIC_VECTOR(7 downto 0):= "00000001";
 	variable M1 : STD_LOGIC_VECTOR(7 downto 0):= "00000001";
 	variable M2 : STD_LOGIC_VECTOR(7 downto 0):= "00000001";

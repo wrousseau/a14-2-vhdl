@@ -224,6 +224,6 @@ LAB2:    xsi_set_current_line(63, ng0);
 extern void work_a_0332494518_1149469521_init()
 {
 	static char *pe[] = {(void *)work_a_0332494518_1149469521_p_0};
-	xsi_register_didat("work_a_0332494518_1149469521", "isim/test_bench_isim_beh.exe.sim/work/a_0332494518_1149469521.didat");
+	xsi_register_didat("work_a_0332494518_1149469521", "isim/Filter_isim_beh.exe.sim/work/a_0332494518_1149469521.didat");
 	xsi_register_executes(pe);
 }

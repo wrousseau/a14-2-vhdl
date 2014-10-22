@@ -30,9 +30,9 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Filter is
+ENTITY Filter is
 	
-    Port ( 	clk : in  STD_LOGIC;
+    PORT ( 	clk : in  STD_LOGIC;
 				R0 : in  STD_LOGIC_VECTOR (31 downto 0);
 				R1 : in  STD_LOGIC_VECTOR (31 downto 0);
 				R2 : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -43,9 +43,9 @@ end Filter;
 
 architecture arc1 of Filter is
 
-signal ready : STD_LOGIC := '0' ;
+signal ready : STD_LOGIC := '0';
 signal k0, k1, k2, k3, k4, k5, k6, k7, k8 : STD_LOGIC_VECTOR(7 downto 0);
-signal result : STD_LOGIC_VECTOR(7 downto 0);
+signal result : STD_LOGIC_VECTOR(7 downto 0) := (others => '0');
 
 COMPONENT Mask is
 	PORT (
@@ -71,10 +71,10 @@ begin
 			 k8 => k8
         );
 		  
-	process(clk,result)
+	process(clk)
 
 	begin
-	result <= "00000000";
+	--result <= "00000000";
 	if clk = '0' then
 		for j in 1 to 2 loop
 			k0 <= R0( (j-1)*7 + 7 downto (j-1)*7 );

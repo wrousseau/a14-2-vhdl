@@ -39,7 +39,7 @@ ARCHITECTURE arc1 OF test_bench IS
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT Filter
+    COMPONENT Filter is
     PORT(
          clk : in  STD_LOGIC;
 			R0 : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -47,7 +47,7 @@ ARCHITECTURE arc1 OF test_bench IS
 			R2 : in  STD_LOGIC_VECTOR (31 downto 0);
 			R3 : out  STD_LOGIC_VECTOR (31 downto 0)
         );
-    END COMPONENT;
+    END COMPONENT Filter;
     
 
    --Inputs
@@ -74,8 +74,8 @@ BEGIN
         );
 
    -- Clock process definitions
-   clk_process :process
-   begin
+   clk_process : PROCESS
+   BEGIN
 		clk <= '0';
 		wait for clk_period/2;
 		clk <= '1';
@@ -83,8 +83,9 @@ BEGIN
    end process;
  
    -- Stimulus process
-   stim_proc: process
-   begin		
+   stim_proc: PROCESS is
+	
+   BEGIN		
       -- hold reset state for 100 ns.
       --wait for 100 ns;	
 		
@@ -94,20 +95,25 @@ BEGIN
 		R0 <= "00000000000000000000000000000000";
 		R1 <= "10100010101000101010001010100010";
 		R2 <= "00111010101100100000011010001110";
-			wait for clk_period;
+		
+		wait on clk;
+		
 		R0 <= R1;
 		R1 <= R2;
 		R2 <= "11111111000000001111111100000000";
-			wait for clk_period;
+		
+		wait on clk;
+		
 		R0 <= R1;
 		R1 <= R2;
 		R2 <= "00000000111111110000000011111111";
-			wait for clk_period;
+		
+		wait on clk;
+		
 		R0 <= R1;
 		R1 <= R2;
 		R2 <= "00000000000000000000000000000000";
 
-      wait;
-   end process;
+   END PROCESS;
 
 END;
